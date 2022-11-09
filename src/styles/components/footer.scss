@@ -1,0 +1,35 @@
+footer {
+    bottom: 0;
+    width: 100%;
+    background: #000;
+    height: 209px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+        .imgfooter {
+            margin-top: 66px;
+        }
+
+        .text_footer {
+            width: 513px;
+            height: 46px;
+            font-size: 24px;
+            color: white;
+            text-align: center;
+        }
+}
+@media (max-width:500px) {
+    footer {
+        height: 200px;
+        .imgfooter{
+            width: 122px;
+            margin-top: 40px;
+        }
+        .text_footer{
+            font-size: 12px;
+        }
+    }
+}

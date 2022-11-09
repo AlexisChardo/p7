@@ -1,0 +1,24 @@
+@font-face {
+    font-family: "Montserrat";
+    src:local("Montserrat-Light") url("../../assets/fonts/Montserrat-Medium.ttf") format("truetype");
+    
+}
+
+body {
+    
+    background: #FFFFFF;
+    
+    box-sizing: border-box;
+    font-family: "Montserrat" , sans-serif;
+    overflow: scroll;
+}
+main {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+ul,li,a {
+    color: inherit;
+    text-decoration: none;
+    list-style-type: none;
+}

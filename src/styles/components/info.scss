@@ -1,0 +1,128 @@
+.singleproducts {
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+.singleproduct__box {
+    color: #ff6060;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    // margin-right: 100px;
+    // margin-left: 100px;
+    margin-top: 30px;
+
+    .singleproduct__title {
+        font-size: 36px;
+        font-weight: 500;
+        margin: 0;
+    }
+    .singleproduct__location {
+        font-size: 18px;
+    }
+    .singleproduct__tags {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .tag{
+        background: #ff6060;
+        color: white;
+        width: 140px;
+        height: 25px;
+        margin-right: 10px;
+        text-align: center;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .tag__text {
+        margin: 0;
+        font-size: 14px;
+        
+    }
+
+    .singleproduct__note {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+    }
+    .server {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        .server__name{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-right: 10px;
+            width: 93px;
+            height: 52px;
+            font-size: 18px;
+        }
+
+        img {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: center;
+        }
+        .server__firstname, .server__lastname{
+            margin: 0;
+            display: flex;
+            justify-content: flex-end;
+        }
+        
+       
+    }
+
+    .rating {
+        width:196px ;
+        height: 36px;
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 20px;
+    }
+    .rating__icon {
+      width: 30px;
+      height: 30px;
+
+    }
+
+    
+}
+
+@media (max-width:560px) {
+    .singleproduct__box{
+        .singleproduct__title{
+            font-size: 18px;
+        }
+        .singleproduct__location{
+            font-size: 14px;
+        }
+        .singleproduct__note{
+            width: 100%;
+            justify-content: space-between;
+            flex-direction: initial;
+        }
+        .rating{
+            width: 150px;
+        }
+        .rating__icon {
+            width: 20px;
+            height: 20px;
+        }
+        .server {
+            img{
+                width: 55px;
+                height: 55px;
+            }
+            .server__name{
+                font-size: 14px;
+            }
+        }
+    }
+}
